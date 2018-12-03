@@ -11,11 +11,17 @@
 #include "Poco/URI.h"
 
 using namespace Poco;
+using namespace std;
 
 class URITest {
 public:
+	string au;
 	URITest(const URI &  uri);
 	virtual ~URITest();
+protected:
+	string path;
+private:
+	string host;
 };
 
 #endif /* URITEST_H_ */

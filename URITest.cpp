@@ -2,17 +2,18 @@
  * URITest.cpp
  *
  *  Created on: Dec 1, 2018
- *      Author: root
+ *      Author: edidada
  */
 
 #include "URITest.h"
 
 URITest::URITest(const URI & uri) {
-	// TODO Auto-generated constructor stub
-
+	au=uri.getAuthority();
+	host=uri._host;
+	path=uri.getPath();
 }
 
 URITest::~URITest() {
-	// TODO Auto-generated destructor stub
+
 }
 

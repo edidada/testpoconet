@@ -1,5 +1,5 @@
 CXXFLAGS =	-O2 -g -Wall -fmessage-length=0 
-OBJS =		http_get.o
+OBJS =		http_get.o URITest.o
 
 LIBS =	-lPocoNet -lPocoFoundation
 

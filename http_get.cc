@@ -7,6 +7,7 @@
 #include <Poco/Exception.h>
 #include <iostream>
 #include <string>
+#include "URITest.h"
 
 using namespace Poco::Net;
 using namespace Poco;
@@ -26,7 +27,8 @@ int main(int argc, char **argv)
     // prepare session
     URI uri(argv[1]);
     string s = uri.getAuthority();
-    cout<<s<<endl;
+    URITest uritest(uri);
+    cout<<uritest.au<<endl;
     HTTPClientSession session(uri.getHost(), uri.getPort());
 
     // prepare path
